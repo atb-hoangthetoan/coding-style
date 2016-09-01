@@ -533,4 +533,4 @@ AAFW::import('jp.aainc.aafw.base.aafwPOSTActionBase');
 ```
 - các method phức tạp, khó hiểu nên bổ sung comment.
 
-- hạn chế sử dụng toán tử 3 ngôi `?:` mà nên thay bằng `if else'.
+- hạn chế sử dụng toán tử 3 ngôi `?:` mà nên thay bằng `if else`.
