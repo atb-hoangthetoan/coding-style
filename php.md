@@ -498,24 +498,35 @@ $foo->bar(
 ```
 
 
-7. Kết luận
+7. Một số quy tắc khác
 --------------
 
-Có rất nhiều yếu tố về style hay practice khác được cố tình bỏ qua trong hướng dẫn này. Có thể kể ra như:
+- Sử dụng '.' thay cho '/' để phân cách đường dẫn.
 
-- Khai báo biến global (global variables) hay hằng global (global constants)
+```php
+<?php
+AAFW::import('jp.aainc.aafw.base.aafwPOSTActionBase');
+);
+```
+- câu lệnh 'if' dù chỉ có một dòng vẫn phải có dấu đóng mở ngoặc và xuống dòng. Ví dụ:
 
-- Khai báo hàm (functions)
+```php
+<?php
+ if (true) {
+	return true;
+ }
+);
+```
 
-- Toán tử và phép gán
+- các ký tự gán '=', '=>' nên để thẳng hàng.
 
-- Inter-line alignment
-
-- Khối Comments và Documentation
-
-- Tiền tố và hậu tố trong tên Class
-
-- Best practices
-
-Những recommendations sau này có thể xem xét lại và mở rộng hướng dẫn này để đề cập đến những yếu tố về style hay practice
-ở trên hay hoàn toàn khác.
+```php
+<?php
+ $result = [
+            "entries"  => $entries,
+            "page"     => $this->page,
+            "count"    => $this->count,
+            "has_next" => $has_next,
+        ];
+);
+```
