@@ -3,13 +3,6 @@ Hướng dẫn về Coding Style - Coding Style Guide
 
 Bộ quy tắc này dựa trên và mở rộng từ [PSR-1], basic coding standard
 
-Bộ quy tắc này được tạo ra nhằm giảm bới những khó khăn trong việc đọc code
-của người khác. Nó thực hiện điều đó bằng cách đặt ra những quy định hay gợi
-ý về việc format PHP code.
-
-[PSR-1]: ./PSR-1.md
-
-
 1. Khái quát chung
 -----------
 
@@ -23,12 +16,6 @@ của người khác. Nó thực hiện điều đó bằng cách đặt ra nh�
 - Cần phải có một dòng trống ở sau phần khai báo `namespace`. Ngoài ra cũng cần có
   một dòng trống phía sau phần khai báo `use`.
 
-- Dấu mở ngặc nhọn dùng khi khai báo class phải được viết ở dòng mới (không viết cùng dòng với phần khai báo tên class),
-  và dấu đóng ngoặc nhọn của một class phải được viết ở dòng mới sau khi kết thúc body của class.
-
-- Dấu mở ngặc nhọn dùng khi khai báo method phải được viết ở dòng mới (không viết cùng dòng với phần khai báo tên method),
-   và dấu đóng ngoặc nhọn của một method phải được viết ở dòng mới sau khi kết thúc body của method.
-
 - Phải luôn khai báo tính visibility (`public`, `protected` hay là `private`) của properties cũng như methods.
  `abstract` và `final` phải được khai báo phía trước tính visibility và `static` phải được khai báo sau tính visibility.
 
@@ -40,37 +27,6 @@ của người khác. Nó thực hiện điều đó bằng cách đặt ra nh�
 
 - Trong câu lệnh control structures, không được phép có dấu cách ở sau dấu mở ngặc tròn cũng như ở trước dấu đóng ngoặc tròn.
 
-### 1.1. Ví dụ
-
-Ví dụ dưới đây bao gồm một vài quy tắc đã được đề cập ở phần trên, overview:
-
-```php
-<?php
-namespace Vendor\Package;
-
-use FooInterface;
-use BarClass as Bar;
-use OtherVendor\OtherPackage\BazClass;
-
-class Foo extends Bar implements FooInterface
-{
-    public function sampleFunction($a, $b = null)
-    {
-        if ($a === $b) {
-            bar();
-        } elseif ($a > $b) {
-            $foo->bar($arg1);
-        } else {
-            BazClass::bar($arg2, $arg3);
-        }
-    }
-
-    final public static function bar()
-    {
-        // method body
-    }
-}
-```
 
 2. Tổng thể
 ----------
@@ -91,8 +47,7 @@ Trong một file chỉ bao gồm code PHP thì không được viết tag đóng
 
 Không có hard limit về độ dài của một dòng.
 
-Soft limit của độ dài một dòng phải là 120 chữ. Chương trình check style tự động phải báo warning nhưng không được báo
-error khi vượt quá soft limit.
+Soft limit của độ dài một dòng phải là 120 chữ. 
 
 Một dòng nên có không quá 80 chữ. Dòng mà dài quá 80 chữ thì nên chia nhỏ ra thành nhiều dòng với độ dài mỗi dòng
 không quá 80 chữ.
@@ -144,8 +99,6 @@ use OtherVendor\OtherPackage\BazClass;
 
 4. Classes, Properties, và Methods
 -----------------------------------
-
-Từ class dưới đây được hiểu là cả những class bình thường, hay cả interfaces và traits.
 
 ### 4.1. Extends và Implements
 
