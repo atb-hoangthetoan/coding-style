@@ -501,32 +501,32 @@ $foo->bar(
 7. Một số quy tắc khác
 --------------
 
-- Sử dụng '.' thay cho '/' để phân cách đường dẫn.
+- Sử dụng `.` thay cho `/` để phân cách đường dẫn.
 
 ```php
 <?php
 AAFW::import('jp.aainc.aafw.base.aafwPOSTActionBase');
 );
 ```
-- câu lệnh 'if' dù chỉ có một dòng vẫn phải có dấu đóng mở ngoặc và xuống dòng. Ví dụ:
+- câu lệnh `if` dù chỉ có một dòng vẫn phải có dấu đóng mở ngoặc và xuống dòng. Ví dụ:
 
 ```php
 <?php
  if (true) {
-	return true;
+    return true;
  }
 );
 ```
 
-- các ký tự gán '=', '=>' nên để thẳng hàng.
+- các ký tự gán `=`, `=>` nên để thẳng hàng.
 
 ```php
 <?php
  $result = [
-            "entries"  => $entries,
-            "page"     => $this->page,
-            "count"    => $this->count,
-            "has_next" => $has_next,
-        ];
+       "entries"  => $entries,
+       "page"     => $this->page,
+       "count"    => $this->count,
+       "has_next" => $has_next,
+ ];
 );
 ```
