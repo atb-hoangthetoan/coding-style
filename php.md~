@@ -531,4 +531,3 @@ AAFW::import('jp.aainc.aafw.base.aafwPOSTActionBase');
  ];
 );
 ```
-- các method phức tạp, khó hiểu nên bổ sung comment.
