@@ -302,7 +302,6 @@ if ($expr1) {
 ```
 
 Từ khoá `elseif` nên được dùng thay cho `else if`, để mọi control keywords chỉ là một từ đơn.
-Chú ý, tránh sử dụng cấu trúc if else lồng nhau quá nhiều.
 
 ### 5.2. `switch`, `case`
 
