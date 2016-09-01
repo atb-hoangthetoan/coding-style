@@ -164,6 +164,8 @@ class ClassName {
 
 ### 4.3. Methods
 
+Tên Method phải được viết dưới dạng `camelCase`. Tham khảo cách viết camelCase tại [camelCase](https://en.wikipedia.org/wiki/CamelCase).
+
 Tên Method không nên được prefix bởi dấu gạch dưới `_` để biểu thị tính protected hay private.
 
 Khi khai báo tên method thì không được để một khoảng trắng ở phía sau tên method.
