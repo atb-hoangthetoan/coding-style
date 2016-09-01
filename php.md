@@ -103,8 +103,6 @@ use OtherVendor\OtherPackage\BazClass;
 
 ### 4.1. Extends và Implements
 
-Tên class phải được viết dưới dạng `StudlyCaps`.
-
 Từ khoá `extends` và `implements` phải được viết cùng dòng với tên class.
 
 Dấu đóng ngoặc phải được viết ở dòng sau của phần body.
