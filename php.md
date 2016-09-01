@@ -103,9 +103,11 @@ use OtherVendor\OtherPackage\BazClass;
 
 ### 4.1. Extends và Implements
 
+Tên class phải được viết dưới dạng `StudlyCaps`.
+
 Từ khoá `extends` và `implements` phải được viết cùng dòng với tên class.
 
-Dấu mở ngoặc nhọn của class phải đứng trên một dòng riêng. Dấu đóng ngoặc phải được viết ở dòng sau của phần body.
+Dấu đóng ngoặc phải được viết ở dòng sau của phần body.
 
 ```php
 <?php
@@ -115,8 +117,7 @@ use FooClass;
 use BarClass as Bar;
 use OtherVendor\OtherPackage\BazClass;
 
-class ClassName extends ParentClass implements \ArrayAccess, \Countable
-{
+class ClassName extends ParentClass implements \ArrayAccess, \Countable {
     // constants, properties, methods
 }
 ```
@@ -515,7 +516,7 @@ AAFW::import('jp.aainc.aafw.base.aafwPOSTActionBase');
 ```php
 <?php
  if (true) {
-    return true;
+	return true;
  }
 );
 ```
