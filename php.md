@@ -1,12 +1,12 @@
 Hướng dẫn về Coding Style - Coding Style Guide
 ==================
 
-Bộ quy tắc này dựa trên và mở rộng từ [PSR-1], basic coding standard
+Bộ quy tắc này dựa trên và mở rộng từ [PSR-1](http://www.php-fig.org/psr/psr-1/), basic coding standard
 
 1. Khái quát chung
 -----------
 
-- Code phải tuân theo "coding style guide" PSR [[PSR-1]].
+- Code phải tuân theo "coding style guide" [PSR-1](http://www.php-fig.org/psr/psr-1/).
 
 - Code không dùng tab, mà phải sử dụng 4 dấu cách làm indent.
 
@@ -33,7 +33,7 @@ Bộ quy tắc này dựa trên và mở rộng từ [PSR-1], basic coding stand
 
 ### 2.1 Basic Coding Standard
 
-Code phải tuân theo "coding style guide" PSR [[PSR-1]].
+Code phải tuân theo "coding style guide" [PSR-1](http://www.php-fig.org/psr/psr-1/).
 
 ### 2.2 Files
 
@@ -516,7 +516,7 @@ AAFW::import('jp.aainc.aafw.base.aafwPOSTActionBase');
 ```php
 <?php
  if (true) {
-	return true;
+    return true;
  }
 );
 ```
