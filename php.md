@@ -507,7 +507,7 @@ $foo->bar(
 ```php
 <?php
 AAFW::import('jp.aainc.aafw.base.aafwPOSTActionBase');
-);
+
 ```
 - câu lệnh `if` dù chỉ có một dòng vẫn phải có dấu đóng mở ngoặc và xuống dòng. Ví dụ:
 
@@ -516,7 +516,7 @@ AAFW::import('jp.aainc.aafw.base.aafwPOSTActionBase');
  if (true) {
     return true;
  }
-);
+
 ```
 
 - các ký tự gán `=`, `=>` nên để thẳng hàng.
@@ -529,6 +529,8 @@ AAFW::import('jp.aainc.aafw.base.aafwPOSTActionBase');
        "count"    => $this->count,
        "has_next" => $has_next,
  ];
-);
+
 ```
 - các method phức tạp, khó hiểu nên bổ sung comment.
+
+- hạn chế sử dụng toán tử 3 ngôi `?:` mà nên thay bằng `if else'.
