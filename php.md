@@ -47,7 +47,7 @@ Trong một file chỉ bao gồm code PHP thì không được viết tag đóng
 
 Không có hard limit về độ dài của một dòng.
 
-Soft limit của độ dài một dòng phải là 120 chữ. 
+Soft limit của độ dài một dòng phải là 120 chữ.
 
 Một dòng nên có không quá 80 chữ. Dòng mà dài quá 80 chữ thì nên chia nhỏ ra thành nhiều dòng với độ dài mỗi dòng
 không quá 80 chữ.
@@ -60,7 +60,7 @@ Không được phép có quá một statement trên một dòng.
 
 ### 2.4. Canh lề - Indenting
 
-Code không dùng tab, mà phải sử dụng 4 dấu cách làm indent. 
+Code không dùng tab, mà phải sử dụng 4 dấu cách làm indent.
 Chú ý, không nên sửa theo chuẩn này đối với những file cũ của người khác code.
 
 ### 2.5. Keywords và True/False/Null
@@ -308,7 +308,6 @@ Chú ý, tránh sử dụng cấu trúc if else lồng nhau quá nhiều.
 ### 5.2. `switch`, `case`
 
 Một `switch` structure được viết như sau.
-Hãy chú ý đến vị trí của dấu ngoặc tròn, khoảng trắng và dấu ngoặc nhọn.
 Phần `case` phải được indent một lần so với `switch`, và `break` keyword (hay các keyword ngắt khác) phải được indent giống
 với phần thân của `case`.
 Phải có một comment kiểu như `// no break` nếu phần thân của `case` không trống, và được cố tình cho qua (không có break)
@@ -337,7 +336,6 @@ switch ($expr) {
 ### 5.3. `while`, `do while`
 
 Một câu lệnh `while` được viết như sau.
-Hãy chú ý vào vị trí của dấu ngoặc tròn, khoảng trắng và dấu ngoặc nhọn.
 
 ```php
 <?php
@@ -359,7 +357,6 @@ do {
 ### 5.4. `for`
 
 Một câu lệnh `for` được viết như sau.
-Hãy chú ý vào vị trí của dấu chấm phẩy, dấu ngoặc tròn, khoảng trắng và dấu ngoặc nhọn.
 
 ```php
 <?php
@@ -371,7 +368,6 @@ for ($i = 0; $i < 10; $i++) {
 ### 5.5. `foreach`
 
 Một câu lệnh `foreach` được viết như sau.
-Hãy chú ý vào vị trí của `=>`, dấu ngoặc tròn, khoảng trắng và dấu ngoặc nhọn.
 
 ```php
 <?php
@@ -383,7 +379,6 @@ foreach ($iterable as $key => $value) {
 ### 5.6. `try`, `catch`
 
 Một block `try catch` được viết như sau.
-Hãy chú ý vào vị trí của dấu ngoặc tròn, khoảng trắng và dấu ngoặc nhọn.
 
 ```php
 <?php
