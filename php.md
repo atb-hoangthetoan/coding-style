@@ -280,10 +280,9 @@ Những quy tắc chung khi viết Control Structures bao gồm:
 - Không được có một khoảng trắng trước dấu đóng ngoặc tròn
 - Phải có một khoảng trắng sau đấu đóng ngoặc tròn và trước dấu mở ngoặc nhọn
 - Phần thân của structure phải được indent một lần
-- Dấu đóng ngoặc nhọn phỉa được đặt trên một dòng mới sau phần thân
+- Dấu đóng ngoặc nhọn phải được đặt trên một dòng mới sau phần thân
 
-Phần thân của mỗi structure phải được đặt trong dấu đóng mở ngoặc kép. Điều này sẽ làm tiêu chuẩn hoá cách viết structures,
-và làm giảm thiểu việc phát sinh ra lỗi khi mà có những dòng mới được thêm vào phần thân.
+Phần thân của mỗi structure phải được đặt trong dấu đóng mở ngoặc kép.
 
 ### 5.1. `if`, `elseif`, `else`
 
@@ -356,8 +355,6 @@ do {
 
 ### 5.4. `for`
 
-Một câu lệnh `for` được viết như sau.
-
 ```php
 <?php
 for ($i = 0; $i < 10; $i++) {
@@ -367,8 +364,6 @@ for ($i = 0; $i < 10; $i++) {
 
 ### 5.5. `foreach`
 
-Một câu lệnh `foreach` được viết như sau.
-
 ```php
 <?php
 foreach ($iterable as $key => $value) {
@@ -377,8 +372,6 @@ foreach ($iterable as $key => $value) {
 ```
 
 ### 5.6. `try`, `catch`
-
-Một block `try catch` được viết như sau.
 
 ```php
 <?php
