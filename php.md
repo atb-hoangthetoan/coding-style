@@ -3,39 +3,14 @@ Hướng dẫn về Coding Style - Coding Style Guide
 
 Bộ quy tắc này dựa trên và mở rộng từ [PSR-1](http://www.php-fig.org/psr/psr-1/), basic coding standard
 
-1. Khái quát chung
------------
-
-- Code phải tuân theo "coding style guide" [PSR-1](http://www.php-fig.org/psr/psr-1/).
-
-- Code không dùng tab, mà phải sử dụng 4 dấu cách làm indent.
-
-- Không có hard limit về độ dài của một dòng; soft limit phải là 120
-  chữ. Một dòng nên có không quá 80 chữ.
-
-- Cần phải có một dòng trống ở sau phần khai báo `namespace`. Ngoài ra cũng cần có
-  một dòng trống phía sau phần khai báo `use`.
-
-- Phải luôn khai báo tính visibility (`public`, `protected` hay là `private`) của properties cũng như methods.
- `abstract` và `final` phải được khai báo phía trước tính visibility và `static` phải được khai báo sau tính visibility.
-
-- Cần phải có một dấu cách phía sau những từ khoá Control structure (như `if`, `else`, `for` ...).
-  Không được có dấu cách phía sau tên của method khi gọi hàm.
-
-- Dấu mở ngoặc nhọn cho control structures (như `if`, `else`, `for` ...) phải được viết cùng dòng, trong khi đó đấu đóng ngoặc
-  phải được viết ở dòng mới.
-
-- Trong câu lệnh control structures, không được phép có dấu cách ở sau dấu mở ngặc tròn cũng như ở trước dấu đóng ngoặc tròn.
-
-
-2. Tổng thể
+1. Khái quát
 ----------
 
-### 2.1 Basic Coding Standard
+### 1.1 Basic Coding Standard
 
 Code phải tuân theo "coding style guide" [PSR-1](http://www.php-fig.org/psr/psr-1/).
 
-### 2.2 Files
+### 1.2 Files
 
 Mọi PHP files phải dùng Unix LF (linefeed) line ending.
 
@@ -43,7 +18,7 @@ Mọi PHP files phải kết thúc bằng một dòng trống.
 
 Trong một file chỉ bao gồm code PHP thì không được viết tag đóng `?>`.
 
-### 2.3. Lines
+### 1.3. Lines
 
 Không có hard limit về độ dài của một dòng.
 
@@ -58,12 +33,12 @@ Dòng trống có thể được thêm vào để code có thể được dễ �
 
 Không được phép có quá một statement trên một dòng.
 
-### 2.4. Canh lề - Indenting
+### 1.4. Canh lề - Indenting
 
 Code không dùng tab, mà phải sử dụng 4 dấu cách làm indent.
 Chú ý, không nên sửa theo chuẩn này đối với những file cũ của người khác code.
 
-### 2.5. Keywords và True/False/Null
+### 1.5. Keywords và True/False/Null
 
 Những [keywords] của PHP phải được viết thường. (không viết hoa)
 
@@ -72,7 +47,7 @@ Những constants của PHP là `true`, `false`, và `null` cũng cần phải v
 [keywords]: http://php.net/manual/en/reserved.keywords.php
 
 
-3. Khai báo Namespace và Use
+2. Khai báo Namespace và Use
 ---------------------------------
 
 Cần phải có một dòng trắng phía sau khai báo `namespace`.
@@ -98,14 +73,14 @@ use OtherVendor\OtherPackage\BazClass;
 ```
 
 
-4. Classes, Properties, và Methods
+3. Classes, Properties, và Methods
 -----------------------------------
 
-### 4.1. Extends và Implements
+Dấu mở ngoặc phải được viết cùng dòng với phần khai báo. Dấu đóng ngoặc phải được viết ở dòng sau của phần body.
+
+### 3.1. Extends và Implements
 
 Từ khoá `extends` và `implements` phải được viết cùng dòng với tên class.
-
-Dấu đóng ngoặc phải được viết ở dòng sau của phần body.
 
 ```php
 <?php
@@ -140,7 +115,7 @@ class ClassName extends ParentClass implements
 }
 ```
 
-### 4.2. Properties
+### 3.2. Properties
 
 Tính Visibility phải được khai báo ở mọi properties.
 
@@ -161,7 +136,7 @@ class ClassName {
 }
 ```
 
-### 4.3. Methods
+### 3.3. Methods
 
 Tên Method phải được viết dưới dạng `camelCase`. Tham khảo cách viết camelCase tại [camelCase](https://en.wikipedia.org/wiki/CamelCase).
 
@@ -183,7 +158,7 @@ class ClassName {
 }
 ```
 
-### 4.4. Method Arguments
+### 3.4. Method Arguments
 
 Trong danh sách argument (đối số) thì không được có khoảng trắng trước mỗi dấu phẩy, và phải có một khoảng trắng
 sau mỗi dấu phẩy.
@@ -222,7 +197,7 @@ class ClassName {
 }
 ```
 
-### 4.5. `abstract`, `final`, và `static`
+### 3.5. `abstract`, `final`, và `static`
 
 Khi được sử dụng, `abstract` và `final` phải được đặt trước phần khai báo visibility.
 
@@ -243,7 +218,7 @@ abstract class ClassName {
 }
 ```
 
-### 4.6. Gọi Method và Function
+### 3.6. Gọi Method và Function
 
 Khi gọi một method hay một function, không được phép có khoảng trắng giữa tên của method hay function và dấu mở ngoặc tròn.
 Không được phép có khoảng trắng sau dấu mở ngoặc tròn.
@@ -270,7 +245,19 @@ $foo->bar(
 );
 ```
 
-5. Control Structures
+### 3.7. Constant
+Constants của class phải được viết hoa toàn bộ và sử dụng gạch dưới ngăn cách giữa các từ. Ví dụ:
+
+```php
+<?php
+namespace Vendor\Model;
+
+class Foo {
+    const VERSION = '7.7';
+    const DATE_APPROVED = '2016-09-05';
+}
+```
+4. Control Structures
 ---------------------
 
 Những quy tắc chung khi viết Control Structures bao gồm:
@@ -284,7 +271,7 @@ Những quy tắc chung khi viết Control Structures bao gồm:
 
 Phần thân của mỗi structure phải được đặt trong dấu đóng mở ngoặc kép.
 
-### 5.1. `if`, `elseif`, `else`
+### 4.1. `if`, `elseif`, `else`
 
 Một `if` structure được viết như sau.
 Hãy chú ý đến vị trí của dấu ngoặc tròn, khoảng trắng, dấu ngoặc nhọn. `else` và `elseif` được đặt trên cùng một dòng
@@ -304,7 +291,7 @@ if ($expr1) {
 Từ khoá `elseif` nên được dùng thay cho `else if`, để mọi control keywords chỉ là một từ đơn.
 Chú ý, tránh sử dụng cấu trúc if else lồng nhau quá nhiều.
 
-### 5.2. `switch`, `case`
+### 4.2. `switch`, `case`
 
 Một `switch` structure được viết như sau.
 Phần `case` phải được indent một lần so với `switch`, và `break` keyword (hay các keyword ngắt khác) phải được indent giống
@@ -332,7 +319,9 @@ switch ($expr) {
 ```
 
 
-### 5.3. `while`, `do while`
+### 4.3. `while`, `do while`
+
+Chú ý: Hạn chế sử dụng cấu trúc `do while`, sử dụng `while do` hoặc làm cách khác nếu có thể.
 
 Một câu lệnh `while` được viết như sau.
 
@@ -353,7 +342,7 @@ do {
 } while ($expr);
 ```
 
-### 5.4. `for`
+### 4.4. `for`
 
 ```php
 <?php
@@ -362,7 +351,7 @@ for ($i = 0; $i < 10; $i++) {
 }
 ```
 
-### 5.5. `foreach`
+### 4.5. `foreach`
 
 ```php
 <?php
@@ -371,7 +360,7 @@ foreach ($iterable as $key => $value) {
 }
 ```
 
-### 5.6. `try`, `catch`
+### 4.6. `try`, `catch`
 
 ```php
 <?php
@@ -384,7 +373,7 @@ try {
 }
 ```
 
-6. Closures
+5. Closures
 -----------
 
 Closures phải được định nghĩa mới một khoảng trắng phía sau keywork `function`, và một khoảng trắng ở phía trước cũng
@@ -487,7 +476,7 @@ $foo->bar(
 ```
 
 
-7. Một số quy tắc khác
+6. Một số quy tắc khác
 --------------
 
 - Sử dụng `.` thay cho `/` để phân cách đường dẫn.
